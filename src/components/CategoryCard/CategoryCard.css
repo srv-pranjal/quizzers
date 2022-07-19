@@ -1,0 +1,16 @@
+.category .card {
+  width: 19rem;
+  max-width: unset;
+}
+
+.category__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 580px) {
+    .category .card {
+      width: 22rem;
+    }
+  }

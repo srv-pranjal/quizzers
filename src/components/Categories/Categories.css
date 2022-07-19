@@ -1,0 +1,6 @@
+.category .card {
+  transition: 0.4s;
+}
+.category .card:hover {
+  transform: scale(1.05);
+}
