@@ -14,12 +14,11 @@ body {
 :root {
   --overlay-color: rgba(0, 0, 0, 0.7);
   --primary-color: rgb(104, 255, 98);
-  --light-primary-color: #ffd35a;
-  --dark-primary-color: #cca027;
   --grey-color: #aaaaaa;
   --background-color: #1f1d2b;
   --dark-background-color: #1a1922;
   --transparent-color: rgba(0, 0, 0, 0.1);
+  --option-background-color: #19212c;
 }
 .section {
   margin: 2rem auto;
@@ -29,11 +28,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-}
-.section__heading {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 2rem;
 }
 
 @media screen and (max-width: 650px) {
