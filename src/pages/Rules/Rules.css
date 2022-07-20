@@ -1,0 +1,31 @@
+.rules {
+  flex-direction: column;
+}
+
+.rules__list {
+  width: 50%;
+  width: 35rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px;
+}
+
+.rules__list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn--outline-primary:hover {
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+    .rules__list {
+      width: 90%;
+    }
+  }
