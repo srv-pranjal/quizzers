@@ -1,9 +1,16 @@
+import { useQuiz } from "contexts";
 import { Link } from "react-router-dom";
 import "./CategoryCard.css";
 
 export const CategoryCard = ({ categoryName, image }) => {
+  const { quizDispatch } = useQuiz();
   return (
-    <Link to="/rules">
+    <Link
+      to="/rules"
+      onClick={() =>
+        quizDispatch({ type: "SET_CATEGORY", payload: categoryName })
+      }
+    >
       <article className="card card--vertical card--shadow">
         <div className="card__content">
           <div className="card__img-container">
