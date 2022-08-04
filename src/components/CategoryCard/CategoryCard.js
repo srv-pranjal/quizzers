@@ -1,15 +1,19 @@
+import { useAuth } from "contexts";
 import { useQuiz } from "contexts";
 import { Link } from "react-router-dom";
+import { showToast } from "utils";
 import "./CategoryCard.css";
 
 export const CategoryCard = ({ categoryName, image }) => {
   const { quizDispatch } = useQuiz();
+  const { isLoggedIn } = useAuth();
   return (
     <Link
       to="/rules"
-      onClick={() =>
-        quizDispatch({ type: "SET_CATEGORY", payload: categoryName })
-      }
+      onClick={() => {
+        quizDispatch({ type: "SET_CATEGORY", payload: categoryName });
+        !isLoggedIn && showToast("info", "Please Log In to Continue");
+      }}
     >
       <article className="card card--vertical card--shadow">
         <div className="card__content">
