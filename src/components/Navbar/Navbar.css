@@ -27,12 +27,19 @@
   margin-right: 0.5rem;
 }
 
-.login-btn:hover {
+.nav .login-btn:hover {
   outline: 0.1rem solid var(--primary-color);
   background-color: unset;
+  color: var(--white-color) ;
+  font-weight: unset;
 }
 
-
+.nav .avatar {
+  color: var(--black-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  font-weight: bold;
+}
 @media only screen and (max-width: 34em) {
   .wrapper {
     gap: 1rem;

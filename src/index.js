@@ -3,17 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import { LoaderProvider, QuizProvider } from "contexts";
+import { AuthProvider, LoaderProvider, QuizProvider } from "contexts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <LoaderProvider>
-        <QuizProvider>
-          <App />
-        </QuizProvider>
-      </LoaderProvider>
+      <AuthProvider>
+        <LoaderProvider>
+          <QuizProvider>
+            <App />
+          </QuizProvider>
+        </LoaderProvider>
+      </AuthProvider>
     </Router>
   </React.StrictMode>
 );

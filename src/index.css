@@ -14,11 +14,12 @@ body {
 :root {
   --overlay-color: rgba(0, 0, 0, 0.7);
   --primary-color: rgb(104, 255, 98);
-  --grey-color: #aaaaaa;
-  --background-color: #1f1d2b;
-  --dark-background-color: #1a1922;
+  --dark-primary-color: rgb(84, 207, 79);
+  --grey-color: rgb(170, 170, 170);
+  --background-color: rgb(31, 29, 43);
+  --dark-background-color: rgb(26, 25, 34);
   --transparent-color: rgba(0, 0, 0, 0.1);
-  --option-background-color: #19212c;
+  --option-background-color: rgb(25, 33, 44);
 }
 .section {
   margin: 2rem auto;
